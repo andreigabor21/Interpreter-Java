@@ -1,0 +1,328 @@
+ProgramState with id:1
+ExecutionStack: {(int v;(Ref(int )a;(v = 10;(new(a,22);(fork((WriteHeap(a,30);(v = 32;(print(v);print(ReadHeap(a))))));(print(v);print(ReadHeap(a))))))))|}
+SymbolTable: 
+Output: {}
+File table: 
+Heap: {}
+
+
+ProgramState with id:1
+ExecutionStack: {int v|(Ref(int )a;(v = 10;(new(a,22);(fork((WriteHeap(a,30);(v = 32;(print(v);print(ReadHeap(a))))));(print(v);print(ReadHeap(a)))))))|}
+SymbolTable: 
+Output: {}
+File table: 
+Heap: {}
+
+
+ProgramState with id:1
+ExecutionStack: {int v|(Ref(int )a;(v = 10;(new(a,22);(fork((WriteHeap(a,30);(v = 32;(print(v);print(ReadHeap(a))))));(print(v);print(ReadHeap(a)))))))|}
+SymbolTable: 
+Output: {}
+File table: 
+Heap: {}
+
+
+ProgramState with id:1
+ExecutionStack: {(Ref(int )a;(v = 10;(new(a,22);(fork((WriteHeap(a,30);(v = 32;(print(v);print(ReadHeap(a))))));(print(v);print(ReadHeap(a)))))))|}
+SymbolTable: (v->0)
+Output: {}
+File table: 
+Heap: {}
+
+
+ProgramState with id:1
+ExecutionStack: {(Ref(int )a;(v = 10;(new(a,22);(fork((WriteHeap(a,30);(v = 32;(print(v);print(ReadHeap(a))))));(print(v);print(ReadHeap(a)))))))|}
+SymbolTable: (v->0)
+Output: {}
+File table: 
+Heap: {}
+
+
+ProgramState with id:1
+ExecutionStack: {Ref(int )a|(v = 10;(new(a,22);(fork((WriteHeap(a,30);(v = 32;(print(v);print(ReadHeap(a))))));(print(v);print(ReadHeap(a))))))|}
+SymbolTable: (v->0)
+Output: {}
+File table: 
+Heap: {}
+
+
+ProgramState with id:1
+ExecutionStack: {Ref(int )a|(v = 10;(new(a,22);(fork((WriteHeap(a,30);(v = 32;(print(v);print(ReadHeap(a))))));(print(v);print(ReadHeap(a))))))|}
+SymbolTable: (v->0)
+Output: {}
+File table: 
+Heap: {}
+
+
+ProgramState with id:1
+ExecutionStack: {(v = 10;(new(a,22);(fork((WriteHeap(a,30);(v = 32;(print(v);print(ReadHeap(a))))));(print(v);print(ReadHeap(a))))))|}
+SymbolTable: (a->(0,int )), (v->0)
+Output: {}
+File table: 
+Heap: {}
+
+
+ProgramState with id:1
+ExecutionStack: {(v = 10;(new(a,22);(fork((WriteHeap(a,30);(v = 32;(print(v);print(ReadHeap(a))))));(print(v);print(ReadHeap(a))))))|}
+SymbolTable: (a->(0,int )), (v->0)
+Output: {}
+File table: 
+Heap: {}
+
+
+ProgramState with id:1
+ExecutionStack: {v = 10|(new(a,22);(fork((WriteHeap(a,30);(v = 32;(print(v);print(ReadHeap(a))))));(print(v);print(ReadHeap(a)))))|}
+SymbolTable: (a->(0,int )), (v->0)
+Output: {}
+File table: 
+Heap: {}
+
+
+ProgramState with id:1
+ExecutionStack: {v = 10|(new(a,22);(fork((WriteHeap(a,30);(v = 32;(print(v);print(ReadHeap(a))))));(print(v);print(ReadHeap(a)))))|}
+SymbolTable: (a->(0,int )), (v->0)
+Output: {}
+File table: 
+Heap: {}
+
+
+ProgramState with id:1
+ExecutionStack: {(new(a,22);(fork((WriteHeap(a,30);(v = 32;(print(v);print(ReadHeap(a))))));(print(v);print(ReadHeap(a)))))|}
+SymbolTable: (a->(0,int )), (v->10)
+Output: {}
+File table: 
+Heap: {}
+
+
+ProgramState with id:1
+ExecutionStack: {(new(a,22);(fork((WriteHeap(a,30);(v = 32;(print(v);print(ReadHeap(a))))));(print(v);print(ReadHeap(a)))))|}
+SymbolTable: (a->(0,int )), (v->10)
+Output: {}
+File table: 
+Heap: {}
+
+
+ProgramState with id:1
+ExecutionStack: {new(a,22)|(fork((WriteHeap(a,30);(v = 32;(print(v);print(ReadHeap(a))))));(print(v);print(ReadHeap(a))))|}
+SymbolTable: (a->(0,int )), (v->10)
+Output: {}
+File table: 
+Heap: {}
+
+
+ProgramState with id:1
+ExecutionStack: {new(a,22)|(fork((WriteHeap(a,30);(v = 32;(print(v);print(ReadHeap(a))))));(print(v);print(ReadHeap(a))))|}
+SymbolTable: (a->(0,int )), (v->10)
+Output: {}
+File table: 
+Heap: {}
+
+
+ProgramState with id:1
+ExecutionStack: {(fork((WriteHeap(a,30);(v = 32;(print(v);print(ReadHeap(a))))));(print(v);print(ReadHeap(a))))|}
+SymbolTable: (a->(1,int )), (v->10)
+Output: {}
+File table: 
+Heap: {1->22, }
+
+
+ProgramState with id:1
+ExecutionStack: {(fork((WriteHeap(a,30);(v = 32;(print(v);print(ReadHeap(a))))));(print(v);print(ReadHeap(a))))|}
+SymbolTable: (a->(1,int )), (v->10)
+Output: {}
+File table: 
+Heap: {1->22, }
+
+
+ProgramState with id:1
+ExecutionStack: {fork((WriteHeap(a,30);(v = 32;(print(v);print(ReadHeap(a))))))|(print(v);print(ReadHeap(a)))|}
+SymbolTable: (a->(1,int )), (v->10)
+Output: {}
+File table: 
+Heap: {1->22, }
+
+
+ProgramState with id:1
+ExecutionStack: {fork((WriteHeap(a,30);(v = 32;(print(v);print(ReadHeap(a))))))|(print(v);print(ReadHeap(a)))|}
+SymbolTable: (a->(1,int )), (v->10)
+Output: {}
+File table: 
+Heap: {1->22, }
+
+
+ProgramState with id:1
+ExecutionStack: {(print(v);print(ReadHeap(a)))|}
+SymbolTable: (a->(1,int )), (v->10)
+Output: {}
+File table: 
+Heap: {1->22, }
+
+
+ProgramState with id:10
+ExecutionStack: {(WriteHeap(a,30);(v = 32;(print(v);print(ReadHeap(a)))))|}
+SymbolTable: (a->(1,int )), (v->10)
+Output: {}
+File table: 
+Heap: {1->22, }
+
+
+ProgramState with id:1
+ExecutionStack: {(print(v);print(ReadHeap(a)))|}
+SymbolTable: (a->(1,int )), (v->10)
+Output: {}
+File table: 
+Heap: {1->22, }
+
+
+ProgramState with id:10
+ExecutionStack: {(WriteHeap(a,30);(v = 32;(print(v);print(ReadHeap(a)))))|}
+SymbolTable: (a->(1,int )), (v->10)
+Output: {}
+File table: 
+Heap: {1->22, }
+
+
+ProgramState with id:1
+ExecutionStack: {print(v)|print(ReadHeap(a))|}
+SymbolTable: (a->(1,int )), (v->10)
+Output: {}
+File table: 
+Heap: {1->22, }
+
+
+ProgramState with id:10
+ExecutionStack: {WriteHeap(a,30)|(v = 32;(print(v);print(ReadHeap(a))))|}
+SymbolTable: (a->(1,int )), (v->10)
+Output: {}
+File table: 
+Heap: {1->22, }
+
+
+ProgramState with id:1
+ExecutionStack: {print(v)|print(ReadHeap(a))|}
+SymbolTable: (a->(1,int )), (v->10)
+Output: {}
+File table: 
+Heap: {1->22, }
+
+
+ProgramState with id:10
+ExecutionStack: {WriteHeap(a,30)|(v = 32;(print(v);print(ReadHeap(a))))|}
+SymbolTable: (a->(1,int )), (v->10)
+Output: {}
+File table: 
+Heap: {1->22, }
+
+
+ProgramState with id:1
+ExecutionStack: {print(ReadHeap(a))|}
+SymbolTable: (a->(1,int )), (v->10)
+Output: {10|}
+File table: 
+Heap: {1->30, }
+
+
+ProgramState with id:10
+ExecutionStack: {(v = 32;(print(v);print(ReadHeap(a))))|}
+SymbolTable: (a->(1,int )), (v->10)
+Output: {10|}
+File table: 
+Heap: {1->30, }
+
+
+ProgramState with id:1
+ExecutionStack: {print(ReadHeap(a))|}
+SymbolTable: (a->(1,int )), (v->10)
+Output: {10|}
+File table: 
+Heap: {1->30, }
+
+
+ProgramState with id:10
+ExecutionStack: {(v = 32;(print(v);print(ReadHeap(a))))|}
+SymbolTable: (a->(1,int )), (v->10)
+Output: {10|}
+File table: 
+Heap: {1->30, }
+
+
+ProgramState with id:1
+ExecutionStack: {}
+SymbolTable: (a->(1,int )), (v->10)
+Output: {10|30|}
+File table: 
+Heap: {1->30, }
+
+
+ProgramState with id:10
+ExecutionStack: {v = 32|(print(v);print(ReadHeap(a)))|}
+SymbolTable: (a->(1,int )), (v->10)
+Output: {10|30|}
+File table: 
+Heap: {1->30, }
+
+
+ProgramState with id:10
+ExecutionStack: {v = 32|(print(v);print(ReadHeap(a)))|}
+SymbolTable: (a->(1,int )), (v->10)
+Output: {10|30|}
+File table: 
+Heap: {1->30, }
+
+
+ProgramState with id:10
+ExecutionStack: {(print(v);print(ReadHeap(a)))|}
+SymbolTable: (a->(1,int )), (v->32)
+Output: {10|30|}
+File table: 
+Heap: {1->30, }
+
+
+ProgramState with id:10
+ExecutionStack: {(print(v);print(ReadHeap(a)))|}
+SymbolTable: (a->(1,int )), (v->32)
+Output: {10|30|}
+File table: 
+Heap: {1->30, }
+
+
+ProgramState with id:10
+ExecutionStack: {print(v)|print(ReadHeap(a))|}
+SymbolTable: (a->(1,int )), (v->32)
+Output: {10|30|}
+File table: 
+Heap: {1->30, }
+
+
+ProgramState with id:10
+ExecutionStack: {print(v)|print(ReadHeap(a))|}
+SymbolTable: (a->(1,int )), (v->32)
+Output: {10|30|}
+File table: 
+Heap: {1->30, }
+
+
+ProgramState with id:10
+ExecutionStack: {print(ReadHeap(a))|}
+SymbolTable: (a->(1,int )), (v->32)
+Output: {10|30|32|}
+File table: 
+Heap: {1->30, }
+
+
+ProgramState with id:10
+ExecutionStack: {print(ReadHeap(a))|}
+SymbolTable: (a->(1,int )), (v->32)
+Output: {10|30|32|}
+File table: 
+Heap: {1->30, }
+
+
+ProgramState with id:10
+ExecutionStack: {}
+SymbolTable: (a->(1,int )), (v->32)
+Output: {10|30|32|30|}
+File table: 
+Heap: {1->30, }
+
+
