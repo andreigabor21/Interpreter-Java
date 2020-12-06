@@ -1,9 +1,11 @@
 package Model.Statements;
 
+import Model.ADTs.IDictionary;
 import Model.Exceptions.MyException;
 import Model.Expressions.Expression;
 import Model.ProgramState.ProgramState;
 import Model.Types.StringType;
+import Model.Types.Type;
 import Model.Values.StringValue;
 import Model.Values.Value;
 
@@ -11,6 +13,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 
 public class CloseFileStatement implements IStatement {
+
     private final Expression expression;
 
     public CloseFileStatement(Expression expression) {
@@ -35,6 +38,15 @@ public class CloseFileStatement implements IStatement {
         else
             throw new MyException("Expression doesn't evaluate to a string.");
         return null;
+    }
+
+    @Override
+    public IDictionary<String, Type> typecheck(IDictionary<String, Type> typeEnv) throws MyException {
+        Type typeExp = expression.typecheck(typeEnv);
+        if(typeExp.equals(new StringType()))
+            return typeEnv;
+        else
+            throw new MyException("Close Statement - not a string type");
     }
 
     @Override

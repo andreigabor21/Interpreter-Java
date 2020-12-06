@@ -7,6 +7,7 @@ import Model.Types.Type;
 import Model.Values.Value;
 
 public class VariableDeclarationStatement implements IStatement{
+
     private final String name;
     private final Type type;
 
@@ -23,6 +24,12 @@ public class VariableDeclarationStatement implements IStatement{
         else
             table.update(this.name, this.type.defaultValue());
         return null;
+    }
+
+    @Override
+    public IDictionary<String, Type> typecheck(IDictionary<String, Type> typeEnv) throws MyException {
+        typeEnv.update(name, type);
+        return typeEnv;
     }
 
     @Override

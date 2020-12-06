@@ -5,23 +5,20 @@ import Model.Exceptions.MyException;
 import Model.Expressions.Expression;
 import Model.ProgramState.ProgramState;
 import Model.Types.BoolType;
+import Model.Types.Type;
 import Model.Values.BoolValue;
 import Model.Values.Value;
 
 import java.io.IOException;
 
 public class WhileStatement implements IStatement {
+
     private final Expression exp;
     private final IStatement statement;
 
     public WhileStatement(Expression exp, IStatement statement) {
         this.exp = exp;
         this.statement = statement;
-    }
-
-    @Override
-    public String toString() {
-        return "(while(" + exp.toString() + ")" + statement.toString()+")";
     }
 
     @Override
@@ -38,5 +35,21 @@ public class WhileStatement implements IStatement {
         else
             throw new MyException("Condition exp is not a boolean.");
         return null;
+    }
+
+    @Override
+    public IDictionary<String, Type> typecheck(IDictionary<String, Type> typeEnv) throws MyException {
+        var copyEnv = typeEnv.clone();
+        Type typeExp = exp.typecheck(copyEnv);
+        if(typeExp.equals(new BoolType())) {
+            return typeEnv;
+        }
+        else
+            throw new MyException("The condition of While is not of type bool");
+    }
+
+    @Override
+    public String toString() {
+        return "(while(" + exp.toString() + ")" + statement.toString()+")";
     }
 }

@@ -1,0 +1,272 @@
+ProgramState with id:1
+ExecutionStack: {(string varf;(varf = "test.in";(OpenFile(varf);(int varc;(read(varf,varc);(print(varc);(read(varf,varc);(print(varc);close(varf)))))))))|}
+SymbolTable: 
+Output: {}
+File table: 
+Heap: {}
+
+
+ProgramState with id:1
+ExecutionStack: {string varf|(varf = "test.in";(OpenFile(varf);(int varc;(read(varf,varc);(print(varc);(read(varf,varc);(print(varc);close(varf))))))))|}
+SymbolTable: 
+Output: {}
+File table: 
+Heap: {}
+
+
+ProgramState with id:1
+ExecutionStack: {string varf|(varf = "test.in";(OpenFile(varf);(int varc;(read(varf,varc);(print(varc);(read(varf,varc);(print(varc);close(varf))))))))|}
+SymbolTable: 
+Output: {}
+File table: 
+Heap: {}
+
+
+ProgramState with id:1
+ExecutionStack: {(varf = "test.in";(OpenFile(varf);(int varc;(read(varf,varc);(print(varc);(read(varf,varc);(print(varc);close(varf))))))))|}
+SymbolTable: (varf->"")
+Output: {}
+File table: 
+Heap: {}
+
+
+ProgramState with id:1
+ExecutionStack: {(varf = "test.in";(OpenFile(varf);(int varc;(read(varf,varc);(print(varc);(read(varf,varc);(print(varc);close(varf))))))))|}
+SymbolTable: (varf->"")
+Output: {}
+File table: 
+Heap: {}
+
+
+ProgramState with id:1
+ExecutionStack: {varf = "test.in"|(OpenFile(varf);(int varc;(read(varf,varc);(print(varc);(read(varf,varc);(print(varc);close(varf)))))))|}
+SymbolTable: (varf->"")
+Output: {}
+File table: 
+Heap: {}
+
+
+ProgramState with id:1
+ExecutionStack: {varf = "test.in"|(OpenFile(varf);(int varc;(read(varf,varc);(print(varc);(read(varf,varc);(print(varc);close(varf)))))))|}
+SymbolTable: (varf->"")
+Output: {}
+File table: 
+Heap: {}
+
+
+ProgramState with id:1
+ExecutionStack: {(OpenFile(varf);(int varc;(read(varf,varc);(print(varc);(read(varf,varc);(print(varc);close(varf)))))))|}
+SymbolTable: (varf->"test.in")
+Output: {}
+File table: 
+Heap: {}
+
+
+ProgramState with id:1
+ExecutionStack: {(OpenFile(varf);(int varc;(read(varf,varc);(print(varc);(read(varf,varc);(print(varc);close(varf)))))))|}
+SymbolTable: (varf->"test.in")
+Output: {}
+File table: 
+Heap: {}
+
+
+ProgramState with id:1
+ExecutionStack: {OpenFile(varf)|(int varc;(read(varf,varc);(print(varc);(read(varf,varc);(print(varc);close(varf))))))|}
+SymbolTable: (varf->"test.in")
+Output: {}
+File table: 
+Heap: {}
+
+
+ProgramState with id:1
+ExecutionStack: {OpenFile(varf)|(int varc;(read(varf,varc);(print(varc);(read(varf,varc);(print(varc);close(varf))))))|}
+SymbolTable: (varf->"test.in")
+Output: {}
+File table: 
+Heap: {}
+
+
+ProgramState with id:1
+ExecutionStack: {(int varc;(read(varf,varc);(print(varc);(read(varf,varc);(print(varc);close(varf))))))|}
+SymbolTable: (varf->"test.in")
+Output: {}
+File table: (test.in->java.io.BufferedReader@6504e3b2)
+Heap: {}
+
+
+ProgramState with id:1
+ExecutionStack: {(int varc;(read(varf,varc);(print(varc);(read(varf,varc);(print(varc);close(varf))))))|}
+SymbolTable: (varf->"test.in")
+Output: {}
+File table: (test.in->java.io.BufferedReader@6504e3b2)
+Heap: {}
+
+
+ProgramState with id:1
+ExecutionStack: {int varc|(read(varf,varc);(print(varc);(read(varf,varc);(print(varc);close(varf)))))|}
+SymbolTable: (varf->"test.in")
+Output: {}
+File table: (test.in->java.io.BufferedReader@6504e3b2)
+Heap: {}
+
+
+ProgramState with id:1
+ExecutionStack: {int varc|(read(varf,varc);(print(varc);(read(varf,varc);(print(varc);close(varf)))))|}
+SymbolTable: (varf->"test.in")
+Output: {}
+File table: (test.in->java.io.BufferedReader@6504e3b2)
+Heap: {}
+
+
+ProgramState with id:1
+ExecutionStack: {(read(varf,varc);(print(varc);(read(varf,varc);(print(varc);close(varf)))))|}
+SymbolTable: (varf->"test.in"), (varc->0)
+Output: {}
+File table: (test.in->java.io.BufferedReader@6504e3b2)
+Heap: {}
+
+
+ProgramState with id:1
+ExecutionStack: {(read(varf,varc);(print(varc);(read(varf,varc);(print(varc);close(varf)))))|}
+SymbolTable: (varf->"test.in"), (varc->0)
+Output: {}
+File table: (test.in->java.io.BufferedReader@6504e3b2)
+Heap: {}
+
+
+ProgramState with id:1
+ExecutionStack: {read(varf,varc)|(print(varc);(read(varf,varc);(print(varc);close(varf))))|}
+SymbolTable: (varf->"test.in"), (varc->0)
+Output: {}
+File table: (test.in->java.io.BufferedReader@6504e3b2)
+Heap: {}
+
+
+ProgramState with id:1
+ExecutionStack: {read(varf,varc)|(print(varc);(read(varf,varc);(print(varc);close(varf))))|}
+SymbolTable: (varf->"test.in"), (varc->0)
+Output: {}
+File table: (test.in->java.io.BufferedReader@6504e3b2)
+Heap: {}
+
+
+ProgramState with id:1
+ExecutionStack: {(print(varc);(read(varf,varc);(print(varc);close(varf))))|}
+SymbolTable: (varf->"test.in"), (varc->15)
+Output: {}
+File table: (test.in->java.io.BufferedReader@6504e3b2)
+Heap: {}
+
+
+ProgramState with id:1
+ExecutionStack: {(print(varc);(read(varf,varc);(print(varc);close(varf))))|}
+SymbolTable: (varf->"test.in"), (varc->15)
+Output: {}
+File table: (test.in->java.io.BufferedReader@6504e3b2)
+Heap: {}
+
+
+ProgramState with id:1
+ExecutionStack: {print(varc)|(read(varf,varc);(print(varc);close(varf)))|}
+SymbolTable: (varf->"test.in"), (varc->15)
+Output: {}
+File table: (test.in->java.io.BufferedReader@6504e3b2)
+Heap: {}
+
+
+ProgramState with id:1
+ExecutionStack: {print(varc)|(read(varf,varc);(print(varc);close(varf)))|}
+SymbolTable: (varf->"test.in"), (varc->15)
+Output: {}
+File table: (test.in->java.io.BufferedReader@6504e3b2)
+Heap: {}
+
+
+ProgramState with id:1
+ExecutionStack: {(read(varf,varc);(print(varc);close(varf)))|}
+SymbolTable: (varf->"test.in"), (varc->15)
+Output: {15|}
+File table: (test.in->java.io.BufferedReader@6504e3b2)
+Heap: {}
+
+
+ProgramState with id:1
+ExecutionStack: {(read(varf,varc);(print(varc);close(varf)))|}
+SymbolTable: (varf->"test.in"), (varc->15)
+Output: {15|}
+File table: (test.in->java.io.BufferedReader@6504e3b2)
+Heap: {}
+
+
+ProgramState with id:1
+ExecutionStack: {read(varf,varc)|(print(varc);close(varf))|}
+SymbolTable: (varf->"test.in"), (varc->15)
+Output: {15|}
+File table: (test.in->java.io.BufferedReader@6504e3b2)
+Heap: {}
+
+
+ProgramState with id:1
+ExecutionStack: {read(varf,varc)|(print(varc);close(varf))|}
+SymbolTable: (varf->"test.in"), (varc->15)
+Output: {15|}
+File table: (test.in->java.io.BufferedReader@6504e3b2)
+Heap: {}
+
+
+ProgramState with id:1
+ExecutionStack: {(print(varc);close(varf))|}
+SymbolTable: (varf->"test.in"), (varc->20)
+Output: {15|}
+File table: (test.in->java.io.BufferedReader@6504e3b2)
+Heap: {}
+
+
+ProgramState with id:1
+ExecutionStack: {(print(varc);close(varf))|}
+SymbolTable: (varf->"test.in"), (varc->20)
+Output: {15|}
+File table: (test.in->java.io.BufferedReader@6504e3b2)
+Heap: {}
+
+
+ProgramState with id:1
+ExecutionStack: {print(varc)|close(varf)|}
+SymbolTable: (varf->"test.in"), (varc->20)
+Output: {15|}
+File table: (test.in->java.io.BufferedReader@6504e3b2)
+Heap: {}
+
+
+ProgramState with id:1
+ExecutionStack: {print(varc)|close(varf)|}
+SymbolTable: (varf->"test.in"), (varc->20)
+Output: {15|}
+File table: (test.in->java.io.BufferedReader@6504e3b2)
+Heap: {}
+
+
+ProgramState with id:1
+ExecutionStack: {close(varf)|}
+SymbolTable: (varf->"test.in"), (varc->20)
+Output: {15|20|}
+File table: (test.in->java.io.BufferedReader@6504e3b2)
+Heap: {}
+
+
+ProgramState with id:1
+ExecutionStack: {close(varf)|}
+SymbolTable: (varf->"test.in"), (varc->20)
+Output: {15|20|}
+File table: (test.in->java.io.BufferedReader@6504e3b2)
+Heap: {}
+
+
+ProgramState with id:1
+ExecutionStack: {}
+SymbolTable: (varf->"test.in"), (varc->20)
+Output: {15|20|}
+File table: 
+Heap: {}
+
+

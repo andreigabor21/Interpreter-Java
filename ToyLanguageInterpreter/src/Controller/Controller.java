@@ -27,7 +27,7 @@ public class Controller {
 
     public List<ProgramState> removeCompletedPrograms(List<ProgramState> inProgress){
         return inProgress.stream()
-                .filter(e->e.isNotCompleted())
+                .filter(ProgramState::isNotCompleted)
                 .collect(Collectors.toList());
     }
 

@@ -3,18 +3,17 @@ package Model.Expressions;
 import Model.ADTs.IDictionary;
 import Model.ADTs.IHeap;
 import Model.Exceptions.MyException;
+import Model.Types.BoolType;
 import Model.Types.IntType;
+import Model.Types.Type;
 import Model.Values.BoolValue;
 import Model.Values.IntValue;
 import Model.Values.Value;
 
 public class RelationalExpression implements Expression {
-    private Expression exp1,exp2;
-    private String op;
-    @Override
-    public String toString() {
-        return  this.exp1.toString() + this.op + this.exp2.toString();
-    }
+    private final Expression exp1;
+    private final Expression exp2;
+    private final String op;
 
     public RelationalExpression(Expression exp1, Expression exp2,String op) {
         this.exp1 = exp1;
@@ -54,5 +53,27 @@ public class RelationalExpression implements Expression {
             else throw new MyException("Second operand is not an int.");
         }
         else throw new MyException("First operand is not an int.");
+    }
+
+    @Override
+    public Type typecheck(IDictionary<String, Type> typeEnv) throws MyException {
+        Type type1, type2;
+        type1 = exp1.typecheck(typeEnv);
+        type2 = exp2.typecheck(typeEnv);
+
+        if(type1.equals(new IntType())) {
+            if(type2.equals(new IntType())) {
+                return new BoolType();
+            }
+            else
+                throw new MyException("Second operand is not an integer");
+        }
+        else
+            throw new MyException("First operand is not an integer");
+    }
+
+    @Override
+    public String toString() {
+        return  this.exp1.toString() + this.op + this.exp2.toString();
     }
 }

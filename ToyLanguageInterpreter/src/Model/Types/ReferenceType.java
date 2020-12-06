@@ -11,7 +11,7 @@ public class ReferenceType implements Type {
         this.inner = inner;
     }
 
-    Type getInner() {
+    public Type getInner() {
         return inner;
     }
 
