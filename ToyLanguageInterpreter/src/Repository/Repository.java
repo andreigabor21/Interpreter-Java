@@ -38,4 +38,11 @@ public class Repository implements IRepository {
     public void setProgramList(List<ProgramState> list) {
         programStates=list;
     }
+
+    public ProgramState getProgramWithId(int id) {
+        for(ProgramState prog : programStates)
+            if(prog.getId() == id)
+                return prog;
+        return null;
+    }
 }

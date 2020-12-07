@@ -2,11 +2,10 @@ package Model.ADTs;
 
 import Model.Exceptions.MyException;
 
-import java.util.Deque;
-import java.util.LinkedList;
-import java.util.Stack;
+import java.util.*;
 
 public class MyStack<T> implements IStack<T> {
+
     private final Deque<T> stack;
 
     public MyStack() {
@@ -28,6 +27,12 @@ public class MyStack<T> implements IStack<T> {
     @Override
     public boolean isEmpty() {
         return stack.isEmpty();
+    }
+
+    @Override
+    public List<T> asList() {
+        List<T> list = new ArrayList<>(stack);
+        return list;
     }
 
     @Override

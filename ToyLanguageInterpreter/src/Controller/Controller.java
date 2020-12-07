@@ -25,10 +25,31 @@ public class Controller {
 
     public void addProgram(ProgramState progState){this.repo.addProgram(progState);}
 
+    public IRepository getRepo() {
+        return repo;
+    }
+
     public List<ProgramState> removeCompletedPrograms(List<ProgramState> inProgress){
         return inProgress.stream()
                 .filter(ProgramState::isNotCompleted)
                 .collect(Collectors.toList());
+    }
+
+    public void executeOneStep() throws MyException {
+        executor = Executors.newFixedThreadPool(2);
+        List<ProgramState> programStates = removeCompletedPrograms(repo.getProgramList());
+        if(programStates.size() > 0){
+            callGarbageCollector(programStates);
+            try {
+                oneStepForAll(programStates);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            programStates = removeCompletedPrograms(repo.getProgramList());
+        }
+        executor.shutdownNow();
+        programStates = removeCompletedPrograms(repo.getProgramList());
+        repo.setProgramList(programStates);
     }
 
     public void oneStepForAll(List<ProgramState> programStates) throws InterruptedException, MyException {

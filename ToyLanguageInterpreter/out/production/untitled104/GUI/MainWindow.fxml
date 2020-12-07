@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="550.0" prefWidth="770.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.MainWindowController">
+   <children>
+      <Label fx:id="programsCountLabel" layoutX="29.0" layoutY="30.0" text="Number of Program States: 0" />
+      <TableView fx:id="heapTableView" layoutX="29.0" layoutY="107.0" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="heapTableAddresses" prefWidth="98.20001602172852" text="Address" />
+          <TableColumn fx:id="heapTableValues" prefWidth="100.19998168945312" text="Value" />
+        </columns>
+      </TableView>
+      <Label layoutX="115.0" layoutY="90.0" text="Heap" />
+      <ListView fx:id="outView" layoutX="280.0" layoutY="107.0" prefHeight="200.0" prefWidth="200.0" />
+      <Label layoutX="366.0" layoutY="90.0" text="Output" />
+      <ListView fx:id="fileTableView" layoutX="531.0" layoutY="107.0" prefHeight="200.0" prefWidth="200.0" />
+      <Label layoutX="617.0" layoutY="82.0" text="File" />
+      <ListView fx:id="programIdView" layoutX="29.0" layoutY="349.0" prefHeight="200.0" prefWidth="200.0" />
+      <Label layoutX="115.0" layoutY="332.0" text="IDs" />
+      <TableView fx:id="symbolTableView" layoutX="280.0" layoutY="350.0" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="symbolTableNames" prefWidth="101.20001220703125" text="Name" />
+          <TableColumn fx:id="symbolTableValues" prefWidth="98.0" text="Value" />
+        </columns>
+      </TableView>
+      <Label layoutX="349.0" layoutY="332.0" text="Symbol Table" />
+      <ListView fx:id="exeStackView" layoutX="531.0" layoutY="349.0" prefHeight="200.0" prefWidth="200.0" />
+      <Label layoutX="594.0" layoutY="332.0" text="Execution Stack" />
+      <Button id="executeButton" fx:id="executeButton" layoutX="676.0" layoutY="19.0" mnemonicParsing="false" onAction="#oneStepHandler" prefHeight="38.0" prefWidth="82.0" stylesheets="@ButtonsStylesheet.css" text="Execute" />
+   </children>
+</AnchorPane>

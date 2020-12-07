@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.SelectWindowController">
+   <children>
+      <SplitPane dividerPositions="0.5" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <items>
+            <ListView fx:id="selectItemListView" prefHeight="200.0" prefWidth="200.0">
+               <padding>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </padding>
+            </ListView>
+            <Button id="selectButton" fx:id="selectButton" mnemonicParsing="false" onAction="#selectStatement" prefHeight="26.0" prefWidth="109.0" stylesheets="@ButtonsStylesheet.css" text="Select" />
+         </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

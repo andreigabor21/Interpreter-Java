@@ -40,6 +40,11 @@ public class MyList<T> implements IList<T>{
     }
 
     @Override
+    public List getContent() {
+        return list;
+    }
+
+    @Override
     public String toString() {
         StringBuilder result = new StringBuilder("{");
 
